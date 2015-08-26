@@ -20,7 +20,7 @@ class Bloco0(Bloco):
 
     @property
     def fechamento(self):
-        registro = Bloco.fechamento.fget(self)
+        registro = super(Bloco0, self).fechamento
         registro[2] += 1
         return registro
 
